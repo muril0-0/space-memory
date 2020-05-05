@@ -128,10 +128,12 @@
 .game-container .game-content .game-board .card {
   grid-column: auto;
   grid-row: auto;
+  width: 100px;
+  height: 100px;
   transition: transform 0.2s;
   cursor: pointer;
 }
 
 .game-container .game-content .game-board .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
