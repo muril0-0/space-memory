@@ -1,9 +1,7 @@
 import cardData from "./cardData.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const randomArray = cardData.sort(() => {
-    Math.random() - 0.5;
-  });
+  const randomData = cardData.sort(() => Math.random() - 0.5);
 
   const boardGame = document.querySelector(".game-board");
 
@@ -12,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardsWon = [];
 
   function createBoard() {
-    for (let i = 0; i < randomArray.length; i++) {
+    for (let i = 0; i < randomData.length; i++) {
       let card = document.createElement("img");
       card.setAttribute("src", "../assets/cards/Blank.png");
       card.setAttribute("class", "card");
@@ -40,16 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     cardsChosen = [];
     cardsChosenId = [];
-    if (cardsWon == randomArray.length / 2) {
+    if (cardsWon == randomData.length / 2) {
       alert("You Win");
     }
   }
 
   function flipCard() {
     let cardId = this.getAttribute("data-id");
-    cardsChosen.push(randomArray[cardId].title);
+    cardsChosen.push(randomData[cardId].title);
     cardsChosenId.push(cardId);
-    this.setAttribute("src", randomArray[cardId].url);
+    this.setAttribute("src", randomData[cardId].url);
     if (cardsChosen.length === 2) {
       setTimeout(checkMath, 500);
     }
