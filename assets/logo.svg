@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="505" height="253" viewBox="0 0 505 253">
+  <defs>
+    <text id="text-2" font-size="0" style="white-space:pre" fill="inherit">
+      <tspan x="0" y="64" font-family="Righteous" font-size="65" font-weight="400" style="white-space:pre;text-transform:none">MEMORY</tspan>
+    </text>
+    <mask id="mask-3" x="-116" y="-164" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="505" height="253" x="-116" y="-164" fill="black"/>
+      <use fill="white" xlink:href="#text-2"/>
+    </mask>
+  </defs>
+  <g>
+    <g transform="translate(116 164)">
+      <text font-size="0" style="white-space:pre">
+        <tspan x="0" y="72" fill="rgb(0,99,181)" font-family="Righteous" font-size="65" font-weight="400" style="white-space:pre;text-transform:none">MEMORY</tspan>
+      </text>
+      <path fill="rgb(0,99,181)" fill-rule="evenodd" d="M222.5 72l-.5-9 10 1v8h-9.5z"/>
+      <g>
+        <text font-size="0" style="white-space:pre">
+          <tspan x="0" y="64" fill="rgb(255,253,44)" font-family="Righteous" font-size="65" font-weight="400" style="white-space:pre;text-transform:none">MEMORY</tspan>
+        </text>
+        <use fill-opacity="0" stroke="rgb(255,253,44)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="6" mask="url(#mask-3)" xlink:href="#text-2"/>
+      </g>
+    </g>
+    <g>
+      <text font-size="0" style="white-space:pre">
+        <tspan x="400" y="196" fill="rgb(170,104,255)" font-family="Righteous" font-size="180" font-weight="400" style="white-space:pre;text-transform:none">E</tspan>
+      </text>
+      <text font-size="0" style="white-space:pre">
+        <tspan x="110" y="173" fill="rgb(170,104,255)" font-family="Righteous" font-size="148" font-weight="400" style="white-space:pre;text-transform:none">PAC</tspan>
+      </text>
+      <path fill="rgb(170,104,255)" fill-rule="evenodd" d="M397 81V62l-11 18v19l11-18z"/>
+      <path fill="rgb(170,104,255)" fill-rule="evenodd" d="M397 162.5v-19l-10 5 10 14z"/>
+      <text font-size="0" style="white-space:pre">
+        <tspan x="0" y="196" fill="rgb(170,104,255)" font-family="Righteous" font-size="180" font-weight="400" style="white-space:pre;text-transform:none">S</tspan>
+      </text>
+      <text font-size="0" style="white-space:pre">
+        <tspan x="400" y="177" fill="rgb(255,255,255)" font-family="Righteous" font-size="180" font-weight="400" style="white-space:pre;text-transform:none">E</tspan>
+      </text>
+      <text font-size="0" style="white-space:pre">
+        <tspan x="110" y="154" fill="rgb(255,255,255)" font-family="Righteous" font-size="148" font-weight="400" style="white-space:pre;text-transform:none">PAC</tspan>
+      </text>
+      <path fill="rgb(170,104,255)" fill-rule="evenodd" d="M5 115s-1-6.803-1-17 1-16 1-16l7 24.5-7 8.5z"/>
+      <text font-size="0" style="white-space:pre">
+        <tspan x="0" y="177" fill="rgb(255,255,255)" font-family="Righteous" font-size="180" font-weight="400" style="white-space:pre;text-transform:none">S</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
