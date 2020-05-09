@@ -11,16 +11,16 @@
   <body>
     <div class="game-container">
       <div class="language-bar">
-        <p>Languages:</p>
-        <img src="../assets/brazil.svg" alt="Brazil Flag" />
-        <img src="../assets/united-states.svg" alt="USA Flag" />
+        <p id="Gp1">Languages:</p>
+        <img src="../assets/brazil.svg" alt="Brazil Flag" class="brFlag" />
+        <img src="../assets/united-states.svg" alt="USA Flag" class="engFlag" />
       </div>
       <div class="game-content">
         <div class="side-bar">
           <div class="header-bar">
             <img src="../assets/logo.svg" alt="Space Memory" />
             <div class="header-buttons">
-              <a href="./index.html" class="btn">Back</a>
+              <a href="./index.html" class="btn" id="Gp2">Back</a>
               <button class="retry-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -37,8 +37,14 @@
             </div>
           </div>
           <div class="section-text">
-            <p>asasaa</p>
-            <img src="../assets/rocket.svg" alt="Info Img" />
+            <p id="info-text">
+              Find pairs to discover universe secrets!
+            </p>
+            <img
+              src="../assets/faces/rocket.svg"
+              alt="Info Img"
+              id="info-img"
+            />
           </div>
         </div>
         <div class="game-board"></div>
@@ -46,5 +52,6 @@
     </div>
 
     <script type="module" src="../js/game.js"></script>
+    <script type="module" src="../js/Gametranslate.js"></script>
   </body>
 </html>

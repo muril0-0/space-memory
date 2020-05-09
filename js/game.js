@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const randomData = cardData.sort(() => Math.random() - 0.5);
 
   const boardGame = document.querySelector(".game-board");
+  const retry = document.querySelector(".retry-btn");
+  const infoTxt = document.querySelector(".section-text #info-text");
+  const infoImg = document.querySelector(".section-text #info-img");
+  const cardsImg = document.querySelectorAll(".card");
 
   let cardsChosen = [];
   let cardsChosenId = [];
@@ -11,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createBoard() {
     for (let i = 0; i < randomData.length; i++) {
-      let card = document.createElement("img");
+      const card = document.createElement("img");
       card.setAttribute("src", "../assets/cards/Blank.png");
       card.setAttribute("class", "card");
       card.setAttribute("data-id", i);
@@ -21,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function checkMath() {
-    let cards = document.querySelectorAll(".game-board img");
+    let cards = document.querySelectorAll(".card");
     const cardOneId = cardsChosenId[0];
     const cardTwoId = cardsChosenId[1];
 
@@ -32,14 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
       cards[cardOneId].removeEventListener("click", flipCard);
       cards[cardTwoId].removeEventListener("click", flipCard);
       cardsWon.push(cardsChosen);
+      infoImg.setAttribute("src", `../assets/faces/${cardsChosen[0]}.png`);
     } else {
       cards[cardOneId].setAttribute("src", "../assets/cards/Blank.png");
       cards[cardTwoId].setAttribute("src", "../assets/cards/Blank.png");
     }
     cardsChosen = [];
     cardsChosenId = [];
-    if (cardsWon == randomData.length / 2) {
-      alert("You Win");
+    if (cardsWon.length == randomData.length / 2) {
+      infoTxt.innerHTML = "Cnogratulations!! You discovered all cards!";
+      infoImg.setAttribute("src", "../assets/faces/win.svg");
     }
   }
 
